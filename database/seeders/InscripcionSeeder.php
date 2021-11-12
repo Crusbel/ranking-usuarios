@@ -26,7 +26,7 @@ class InscripcionSeeder extends Seeder
                     'curso_id' => 1
                 ],
                 [
-                    'estado' => 'desaprobado',
+                    'estado' => 'aprobado',
                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                     'usuario_id' => 1,
                     'curso_id' => 2
@@ -35,7 +35,7 @@ class InscripcionSeeder extends Seeder
                     'estado' => 'aprobado',
                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                     'usuario_id' => 2,
-                    'curso_id' => 2
+                    'curso_id' => 1
                 ],
                 [
                     'estado' => 'aprobado',

@@ -65,8 +65,7 @@ class UsuarioController extends Controller
             // resultados de evaluaciones por temas, union de los temas a un curso
             foreach ($nota_temas as $key => $value) {
                 $promedio_todos_cursos = ($total_temas[$key] > 0) ? $nota_temas[$key] / $total_temas[$key] : 0;
-                $intentos_por_curso = ($total_temas[$key] > 0) ? $intentos_temas[$key]  / $total_temas[$key] / 3 * 100 : 0;
-                $intentos_por_curso = round($intentos_por_curso, 2);
+                $intentos_por_curso = round(($total_temas[$key] > 0) ? $intentos_temas[$key]  / $total_temas[$key] / 3 * 100 : 0, 2);
             }
             //********************
 
